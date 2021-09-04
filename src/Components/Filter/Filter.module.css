@@ -1,0 +1,17 @@
+.filterContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputFilter {
+  margin-left: 50px;
+}
+.filterTitle {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.filterIcon {
+  margin-right: 5px;
+}

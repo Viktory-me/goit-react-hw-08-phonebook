@@ -1,9 +1,10 @@
 Form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   height: auto;
+  color: white;
 }
 Label {
   font-weight: bold;
@@ -14,13 +15,18 @@ Label {
 
 Button {
   padding: 4px 10px;
-  color: #c21111e2;
+  color: rgb(16, 31, 31);
 }
 button:hover {
-  background-color: #c21111e2;
+  background-color: #75ecec;
   color: white;
 }
 input {
   padding: 4px;
-  margin-bottom: 5px;
+}
+.iconForm {
+  margin-right: 5px;
+}
+.message {
+  font-size: x-small;
 }

@@ -34,15 +34,11 @@ function ContactList() {
       {contacts.map(({ id, name, number }) => (
         <ItemContact key={id}>
           <Contain>
-            <RiContactsLine color='#c21111e2'></RiContactsLine>
+            <RiContactsLine color='#75ecec'></RiContactsLine>
             <Paragraph>{name}</Paragraph>
           </Contain>
           <Contain>
-            <BsPhone
-              width='16px'
-              viewBox='0 0 16 16'
-              color='#c21111e2'
-            ></BsPhone>
+            <BsPhone width='16px' viewBox='0 0 16 16' color='#75ecec'></BsPhone>
             <Paragraph>{number}</Paragraph>{" "}
           </Contain>
 

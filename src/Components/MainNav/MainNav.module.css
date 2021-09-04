@@ -1,0 +1,17 @@
+.mainNavHeader {
+  display: flex;
+  justify-content: space-between;
+  text-decoration-line: none;
+}
+.linkNav {
+  color: #75ecec;
+  text-decoration-line: none;
+}
+.linkNav:first-of-type {
+  margin-right: 400px;
+}
+.linkNav:hover,
+.linkNav:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px pink;
+}

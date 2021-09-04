@@ -3,7 +3,7 @@ import { RiContactsLine } from "react-icons/ri";
 import { BsPhone } from "react-icons/bs";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import shortid from "shortid";
-import "./Form.module.css";
+import s from "./Form.module.css";
 import { getFiltredContacts } from "../../redux/contacts/contactsSelector";
 import { addContact } from "../../redux/contacts/contactsOperations";
 
@@ -47,7 +47,11 @@ function MyForm() {
     >
       <Form autoComplete='off'>
         <label htmlFor={`id-${nameId}`}>
-          <RiContactsLine color='#c21111e2'></RiContactsLine> Name
+          <RiContactsLine
+            className={s.iconForm}
+            color='#75ecec'
+          ></RiContactsLine>{" "}
+          Name
         </label>
         <Field
           type='text'
@@ -55,10 +59,10 @@ function MyForm() {
           id={`id-${nameId}`}
           placeholder='enter name'
         />
-        <ErrorMessage name='name' />
+        <ErrorMessage className={s.message} name='name' />
 
         <label htmlFor={`id-${phoneId}`}>
-          <BsPhone color='#c21111e2'></BsPhone>Number
+          <BsPhone className={s.iconForm} color='#75ecec'></BsPhone>Number
         </label>
         <Field
           type='tel'
@@ -66,7 +70,7 @@ function MyForm() {
           id={`id-${phoneId}`}
           placeholder='+111-111-11'
         />
-        <ErrorMessage name='number' />
+        <ErrorMessage className={s.message} name='number' />
 
         <button type='submit'>Add contact</button>
       </Form>

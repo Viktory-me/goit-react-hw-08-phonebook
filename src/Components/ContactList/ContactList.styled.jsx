@@ -5,9 +5,10 @@ export const ListContact = styled.ul`
   flex-direction: column;
   margin-bottom: 10px;
   list-style: none;
-  padding-inline-start: 5px;
-  margin: 0 auto;
+  padding-inline-start: 160px;
+
   margin-top: 5px;
+  color: white;
 `;
 export const ItemContact = styled.li`
   display: flex;

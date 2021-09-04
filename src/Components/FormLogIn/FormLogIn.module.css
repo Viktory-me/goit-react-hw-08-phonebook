@@ -1,0 +1,24 @@
+.fieldFormLogIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 550px;
+  margin: auto;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.fieldLogIn {
+  margin-right: 30px;
+}
+.fieldIcon {
+  margin-right: 5px;
+}
+.logInBtn {
+  padding: 4px 10px;
+  color: rgb(16, 31, 31);
+}
+.logInBtn:hover {
+  background-color: #75ecec;
+  color: white;
+}

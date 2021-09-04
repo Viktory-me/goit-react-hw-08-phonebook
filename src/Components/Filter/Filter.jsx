@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import { getFiltred } from "../../redux/contacts/contactsSelector";
 import { RiPhoneFindLine } from "react-icons/ri";
-import { FilterContainer, Input, FilterTitle } from "./Filter.styled";
+import s from "./Filter.module.css";
 import { setFilter } from "redux/contacts/contactsSlices";
 
 export default function Filter() {
@@ -11,18 +11,22 @@ export default function Filter() {
   const filter = useSelector(getFiltred);
 
   return (
-    <FilterContainer>
-      <FilterTitle>
-        <RiPhoneFindLine color='#c21111e2'></RiPhoneFindLine>
+    <div className={s.filterContainer}>
+      <p className={s.filterTitle}>
+        <RiPhoneFindLine
+          className={s.filterIcon}
+          color='#75ecec'
+        ></RiPhoneFindLine>
         Find contacts by name
-      </FilterTitle>
-      <Input
+      </p>
+      <input
+        className={s.inputFilter}
         type='text'
         value={filter}
         onChange={(e) => dispatch(setFilter(e.target.value))}
         placeholder='enter name'
       />
-    </FilterContainer>
+    </div>
   );
 }
 Filter.propTypes = {

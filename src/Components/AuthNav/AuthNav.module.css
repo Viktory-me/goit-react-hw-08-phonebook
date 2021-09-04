@@ -1,0 +1,16 @@
+.containerAuth {
+  display: flex;
+  align-items: center;
+}
+.linkAuth {
+  text-decoration: none;
+  color: #75ecec;
+}
+.linkAuth:hover,
+.linkAuth:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px pink;
+}
+.linkAuth:first-of-type {
+  margin-right: 50px;
+}

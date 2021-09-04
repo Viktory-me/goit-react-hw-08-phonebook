@@ -1,0 +1,17 @@
+.titleHome {
+  color: white;
+  text-align: center;
+  /* margin-block-end: 10px;
+  margin-block-start: 10px; */
+}
+.homeLink {
+  color: #75ecec;
+  text-decoration: none;
+}
+.homeLink:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px pink;
+}
+.aboutInfo {
+  color: white;
+}

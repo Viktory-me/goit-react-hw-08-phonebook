@@ -4,7 +4,7 @@ export const getError = (state) => state.error;
 
 export const getLoading = (state) => state.isLoading;
 
-export const getFiltred = (state) => state.filter;
+export const getFiltred = (state) => state.contacts.filter;
 
 export const getContactsList = (state) => state.contacts.items;
 

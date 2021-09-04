@@ -3,21 +3,17 @@ import { combineReducers } from "redux";
 import { fetchContacts, addContact, deleteContact } from "./contactsOperations";
 
 const contactsSlice = createSlice({
-  name: "contacts",
-  initialState: {
-    items: [],
-  },
+  name: "items",
+  initialState: [],
 
   extraReducers: {
-    [fetchContacts.fulfilled]: (_, { payload }) => ({ items: payload }),
+    [fetchContacts.fulfilled]: (_, { payload }) => payload,
 
-    [addContact.fulfilled]: (state, { payload }) => ({
-      items: [payload, ...state.items],
-    }),
+    [addContact.fulfilled]: (state, { payload }) => [payload, ...state],
 
-    [deleteContact.fulfilled]: (state, { payload }) => ({
-      items: state.items.filter((contact) => contact.id !== payload),
-    }),
+    [deleteContact.fulfilled]: (state, { payload }) => {
+      return state.filter((contact) => contact.id !== payload);
+    },
   },
 });
 
@@ -63,13 +59,13 @@ const isLoadingSlice = createSlice({
   },
 });
 
-const contacts = contactsSlice.reducer;
+const items = contactsSlice.reducer;
 const filter = filterSlice.reducer;
 const error = errorSlice.reducer;
 const isLoading = isLoadingSlice.reducer;
 
 export default combineReducers({
-  contacts,
+  items,
   filter,
   error,
   isLoading,

@@ -1,0 +1,22 @@
+.containerRegistration {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 12px;
+}
+.fieldRegistration {
+  margin-right: 8px;
+  max-width: 150px;
+}
+.signUpBtn {
+  padding: 4px 10px;
+  color: rgb(16, 31, 31);
+  font-size: 10px;
+  font-weight: bold;
+}
+.signUpBtn:hover {
+  background-color: #75ecec;
+  color: white;
+}
